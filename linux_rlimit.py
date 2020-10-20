@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #
-# Roland Pihlakas, 2018
-# roland@simplify.ee
+# Roland Pihlakas, 2018, roland@simplify.ee
 #
 
 
