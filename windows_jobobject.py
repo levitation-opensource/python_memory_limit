@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #
+# Creative Commons Attribution Share Alike 4.0 International License
 # Roland Pihlakas, 2017, roland@simplify.ee
 # Aya, 2013, https://stackoverflow.com/users/172176/aya
 #
@@ -118,7 +119,6 @@ def set_mem_commit_limit_worker(pid, size, min_free_swap = None):
 
 
   # child processes inherit the job object so it is not necessary to check for the parent
-  main_pid = os.getpid() # if __name__ == '__main__' else os.getppid()
 
 
   # https://msdn.microsoft.com/en-us/library/windows/desktop/ms682409(v=vs.85).aspx
@@ -162,7 +162,7 @@ def set_mem_commit_limit_worker(pid, size, min_free_swap = None):
   success_assign = ctypes.windll.kernel32.AssignProcessToJobObject(job, process)
   # assert success
 
-  #if __name__ != '__main__': # NB! due to JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE flag
+  # NB! comment-out: due to JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE flag do not close the job handle here
   # success = ctypes.windll.kernel32.CloseHandle(job)
   # # assert success
 

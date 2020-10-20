@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 
 #
+# Creative Commons Attribution Share Alike 4.0 International License
 # Roland Pihlakas, 2018, roland@simplify.ee
 #
 
 
-# Set memory limits for current process,  to specified 'size' in bytes
+# Set memory limits for current process, to specified 'size' in bytes
 def set_mem_limits(data_size, address_space_size):
 
 
@@ -20,7 +21,7 @@ def set_mem_limits(data_size, address_space_size):
 
     # (resource.RLIMIT_STACK, (int(8 * 1024 * 1024), int(8 * 1024 * 1024))),
     # (resource.RLIMIT_MEMLOCK, (int(64 * 1024), int(64 * 1024))),   # The maximum address space which may be locked in memory.  # 64kB is the default soft and hard limit
-    # (resource.RLIMIT_MSGQUEUE, (0, 0)),   # The number of bytes that can be allocated for POSIX message queues.)
+    # (resource.RLIMIT_MSGQUEUE, (0, 0)),   # The number of bytes that can be allocated for POSIX message queues.
     # (resource.RLIMIT_SIGPENDING, (0, 0)),
     # (resource.RLIMIT_NICE, (10, 10)),   # -20 is the highest priority and 19 is the lowest priority
     # (resource.RLIMIT_SBSIZE, (0, 0)),   # The maximum size (in bytes) of socket buffer usage for this user. This limits the amount of network memory, and hence the amount of mbufs, that this user may hold at any time.  # Availability: FreeBSD 9 or later.
