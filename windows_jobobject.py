@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 #
-# Roland Pihlakas, 2017
-# roland@simplify.ee
+# Roland Pihlakas, 2017, roland@simplify.ee
+# Aya, 2013, https://stackoverflow.com/users/172176/aya
 #
 
 
